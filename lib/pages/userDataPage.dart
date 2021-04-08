@@ -144,7 +144,7 @@ class UserDataPage extends StatelessWidget {
                 ],
               ),
           );
-        }
+        },
     );
   }
 }

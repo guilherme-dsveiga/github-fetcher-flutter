@@ -3,7 +3,6 @@ import 'package:dio/dio.dart';
 import 'dart:async';
 import 'package:flutter_app/models/defaultUser.dart';
 import 'package:flutter_app/models/defaultColors.dart';
-import 'package:flutter_app/pages/userDataPage.dart';
 import 'package:flutter_app/services/configServices.dart';
 var _username, userFetched, uri;
 
@@ -21,6 +20,7 @@ class HomePage extends StatelessWidget {
         userFetched = User.fromJson(response.data);
         return userFetched;
       } on DioError catch (err) {
+        Navigator.pushNamed(context, '/notFound');
         throw ('Erro ao realizar o metodo GET - $err');
       }
     }
@@ -31,8 +31,7 @@ class HomePage extends StatelessWidget {
       fetchedGithub = fetchGithub();
       Timer(
           Duration(seconds: 2),
-          () => Navigator.push(context,
-              MaterialPageRoute(builder: (context) => UserDataPage())));
+          () => Navigator.pushNamed(context, '/userData'));
     }
 
     return Scaffold(

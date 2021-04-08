@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/models/defaultColors.dart';
 import 'package:flutter_app/pages/homePage.dart';
 import 'package:flutter_app/pages/userDataPage.dart';
+import 'package:flutter_app/pages/notFoundPage.dart';
 
 class App extends StatelessWidget {
   @override
@@ -16,7 +17,8 @@ class App extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),
-        '/userData': (context) => UserDataPage()
+        '/userData': (context) => UserDataPage(),
+        '/notFound': (context) => NotFoundPage(),
       },
     );
   }

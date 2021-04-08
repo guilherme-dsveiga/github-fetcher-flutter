@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_app/app.dart';
 
 void main() => {
-   SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]),
+  WidgetsFlutterBinding.ensureInitialized(),
+  SystemChrome.setEnabledSystemUIOverlays([SystemUiOverlay.bottom]),
   runApp(App())
 };
