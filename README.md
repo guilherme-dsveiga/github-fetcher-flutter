@@ -1,4 +1,4 @@
-#Github User lookup
+# Github User lookup
 
 Aplicativo criado com o intúito de melhorar minhas habilidades em flutter e também participar do teste técnico do Santander.
 
