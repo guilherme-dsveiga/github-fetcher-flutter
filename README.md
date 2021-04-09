@@ -9,6 +9,6 @@ Caso o usuário digitado não for encontrado, o aplicativo redirecionará para a
 
 ### Links
 
-[Curriculo (AINDA EM DESENVOLVIMENTO)](guilherme-dsveiga.github.io)
+[Curriculo (AINDA EM DESENVOLVIMENTO)](https://guilherme-dsveiga.github.io)
 
 [Linkedin](https://www.linkedin.com/in/guilherme-veiga-496aa5170/)
