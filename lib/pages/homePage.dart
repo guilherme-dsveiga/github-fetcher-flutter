@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         Dio dio = new Dio();
         response = await dio.get(uri);
         userFetched = User.fromJson(response.data);
+        Navigator.pushNamed(context, '/userData');
         return userFetched;
       } on DioError catch (err) {
         Navigator.pushNamed(context, '/notFound');
@@ -29,9 +30,6 @@ class HomePage extends StatelessWidget {
       _formKey.currentState!.save();
       uri = 'https://api.github.com/users/' + _username;
       fetchedGithub = fetchGithub();
-      Timer(
-          Duration(seconds: 2),
-          () => Navigator.pushNamed(context, '/userData'));
     }
 
     return Scaffold(
